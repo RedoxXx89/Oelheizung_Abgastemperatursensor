@@ -1,0 +1,3 @@
+[submodule "lib/timerControl"]
+	path = lib/timerControl
+	url = https://github.com/RedoxXx89/timerControl.git

@@ -1,18 +1,13 @@
-#include <Arduino.h>
+#include "handler.h"
 
-// put function declarations here:
-int myFunction(int, int);
+HANDLER_CONTROL *handler;
 
-void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+void setup()
+{
+  handler = new HANDLER_CONTROL();
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+void loop()
+{
+  handler->execute();
 }
